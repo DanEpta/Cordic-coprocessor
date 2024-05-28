@@ -1,0 +1,1963 @@
+$date
+	Thu May 23 21:40:34 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module cordic_proc_tb $end
+$var wire 1 ! data_ready $end
+$var wire 22 " phi_o [21:0] $end
+$var wire 2 # quart [1:0] $end
+$var wire 20 $ x_o [19:0] $end
+$var wire 20 % y_o [19:0] $end
+$var reg 1 & clk $end
+$var reg 1 ' enable $end
+$var integer 32 ( i [31:0] $end
+$var reg 22 ) phi_i [21:0] $end
+$var reg 1 * rst $end
+$var reg 20 + x_i [19:0] $end
+$var reg 20 , y_i [19:0] $end
+$scope module temp $end
+$var wire 1 - clk $end
+$var wire 1 ! data_ready $end
+$var wire 1 . enable $end
+$var wire 22 / phi_i [21:0] $end
+$var wire 22 0 phi_o [21:0] $end
+$var wire 2 1 quart [1:0] $end
+$var wire 1 2 rst $end
+$var wire 1 3 rst_step $end
+$var wire 20 4 x_i [19:0] $end
+$var wire 20 5 x_o [19:0] $end
+$var wire 20 6 y_i [19:0] $end
+$var wire 20 7 y_o [19:0] $end
+$scope module quart_in $end
+$var wire 1 - clk $end
+$var wire 1 . enable $end
+$var wire 22 8 phi_veer_in [21:0] $end
+$var wire 1 2 rst $end
+$var wire 1 3 rst_step $end
+$var reg 1 9 done $end
+$var reg 1 : first_run $end
+$var reg 2 ; next_state [1:0] $end
+$var reg 1 < phi_assign $end
+$var reg 9 = phi_int [8:0] $end
+$var reg 9 > phi_int_reg [8:0] $end
+$var reg 22 ? phi_veer_out [21:0] $end
+$var reg 2 @ quarter [1:0] $end
+$var reg 2 A state [1:0] $end
+$upscope $end
+$scope module rotator $end
+$var wire 1 - clk $end
+$var wire 1 B new_data $end
+$var wire 2 C quartor [1:0] $end
+$var wire 1 2 rst $end
+$var wire 1 3 rst_step $end
+$var wire 20 D x_i [19:0] $end
+$var wire 20 E y_i [19:0] $end
+$var reg 20 F cos_x [19:0] $end
+$var reg 1 G data_ready $end
+$var reg 1 H processing $end
+$var reg 20 I sin_y [19:0] $end
+$var reg 20 J x_temp [19:0] $end
+$var reg 20 K y_temp [19:0] $end
+$upscope $end
+$scope module consta $end
+$var wire 1 - clk $end
+$var wire 20 L data_in_x [19:0] $end
+$var wire 20 M data_in_y [19:0] $end
+$var wire 1 N new_data $end
+$var wire 1 2 rst $end
+$var wire 1 3 rst_step $end
+$var reg 20 O cos_x_out [19:0] $end
+$var reg 1 P data_ready $end
+$var reg 1 Q first_run $end
+$var reg 20 R sin_y_out [19:0] $end
+$var reg 19 S temp_data_x [18:0] $end
+$var reg 19 T temp_data_y [18:0] $end
+$scope function SHIFT_RIGHT $end
+$upscope $end
+$upscope $end
+$scope module step $end
+$var wire 1 - clk $end
+$var wire 1 2 rst $end
+$var reg 5 U counter [4:0] $end
+$var reg 1 V rst_step $end
+$upscope $end
+$scope begin genblk1 $end
+$scope module Out $end
+$var wire 20 W X_in [19:0] $end
+$var wire 20 X Y_in [19:0] $end
+$var wire 1 - clk $end
+$var wire 1 Y data_in $end
+$var wire 1 . enable $end
+$var wire 22 Z phi_veer_in [21:0] $end
+$var wire 2 [ quarter_in [1:0] $end
+$var wire 2 \ quarter_out [1:0] $end
+$var wire 22 ] result_grad [21:0] $end
+$var wire 1 2 rst $end
+$var wire 1 3 rst_step $end
+$var reg 20 ^ X_out [19:0] $end
+$var reg 20 _ Xd [19:0] $end
+$var reg 20 ` Y_out [19:0] $end
+$var reg 20 a Yd [19:0] $end
+$var reg 1 b done $end
+$var reg 4 c iter_grad [3:0] $end
+$var reg 22 d phi_veer_out [21:0] $end
+$scope function SHIFT_RIGHT $end
+$upscope $end
+$scope module grd $end
+$var wire 4 e value [3:0] $end
+$var reg 22 f result [21:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk01 $end
+$scope module Out $end
+$var wire 20 g X_in [19:0] $end
+$var wire 20 h Y_in [19:0] $end
+$var wire 1 - clk $end
+$var wire 1 i data_in $end
+$var wire 1 . enable $end
+$var wire 22 j phi_veer_in [21:0] $end
+$var wire 2 k quarter_in [1:0] $end
+$var wire 2 l quarter_out [1:0] $end
+$var wire 22 m result_grad [21:0] $end
+$var wire 1 2 rst $end
+$var wire 1 3 rst_step $end
+$var reg 20 n X_out [19:0] $end
+$var reg 20 o Xd [19:0] $end
+$var reg 20 p Y_out [19:0] $end
+$var reg 20 q Yd [19:0] $end
+$var reg 1 r done $end
+$var reg 4 s iter_grad [3:0] $end
+$var reg 22 t phi_veer_out [21:0] $end
+$scope function SHIFT_RIGHT $end
+$upscope $end
+$scope module grd $end
+$var wire 4 u value [3:0] $end
+$var reg 22 v result [21:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk001 $end
+$scope module Out $end
+$var wire 20 w X_in [19:0] $end
+$var wire 20 x Y_in [19:0] $end
+$var wire 1 - clk $end
+$var wire 1 y data_in $end
+$var wire 1 . enable $end
+$var wire 22 z phi_veer_in [21:0] $end
+$var wire 2 { quarter_in [1:0] $end
+$var wire 2 | quarter_out [1:0] $end
+$var wire 22 } result_grad [21:0] $end
+$var wire 1 2 rst $end
+$var wire 1 3 rst_step $end
+$var reg 20 ~ X_out [19:0] $end
+$var reg 20 !" Xd [19:0] $end
+$var reg 20 "" Y_out [19:0] $end
+$var reg 20 #" Yd [19:0] $end
+$var reg 1 $" done $end
+$var reg 4 %" iter_grad [3:0] $end
+$var reg 22 &" phi_veer_out [21:0] $end
+$scope function SHIFT_RIGHT $end
+$upscope $end
+$scope module grd $end
+$var wire 4 '" value [3:0] $end
+$var reg 22 (" result [21:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk0001 $end
+$scope module Out $end
+$var wire 20 )" X_in [19:0] $end
+$var wire 20 *" Y_in [19:0] $end
+$var wire 1 - clk $end
+$var wire 1 +" data_in $end
+$var wire 1 . enable $end
+$var wire 22 ," phi_veer_in [21:0] $end
+$var wire 2 -" quarter_in [1:0] $end
+$var wire 2 ." quarter_out [1:0] $end
+$var wire 22 /" result_grad [21:0] $end
+$var wire 1 2 rst $end
+$var wire 1 3 rst_step $end
+$var reg 20 0" X_out [19:0] $end
+$var reg 20 1" Xd [19:0] $end
+$var reg 20 2" Y_out [19:0] $end
+$var reg 20 3" Yd [19:0] $end
+$var reg 1 4" done $end
+$var reg 4 5" iter_grad [3:0] $end
+$var reg 22 6" phi_veer_out [21:0] $end
+$scope function SHIFT_RIGHT $end
+$upscope $end
+$scope module grd $end
+$var wire 4 7" value [3:0] $end
+$var reg 22 8" result [21:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk00001 $end
+$scope module Out $end
+$var wire 20 9" X_in [19:0] $end
+$var wire 20 :" Y_in [19:0] $end
+$var wire 1 - clk $end
+$var wire 1 ;" data_in $end
+$var wire 1 . enable $end
+$var wire 22 <" phi_veer_in [21:0] $end
+$var wire 2 =" quarter_in [1:0] $end
+$var wire 2 >" quarter_out [1:0] $end
+$var wire 22 ?" result_grad [21:0] $end
+$var wire 1 2 rst $end
+$var wire 1 3 rst_step $end
+$var reg 20 @" X_out [19:0] $end
+$var reg 20 A" Xd [19:0] $end
+$var reg 20 B" Y_out [19:0] $end
+$var reg 20 C" Yd [19:0] $end
+$var reg 1 D" done $end
+$var reg 4 E" iter_grad [3:0] $end
+$var reg 22 F" phi_veer_out [21:0] $end
+$scope function SHIFT_RIGHT $end
+$upscope $end
+$scope module grd $end
+$var wire 4 G" value [3:0] $end
+$var reg 22 H" result [21:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk000001 $end
+$scope module Out $end
+$var wire 20 I" X_in [19:0] $end
+$var wire 20 J" Y_in [19:0] $end
+$var wire 1 - clk $end
+$var wire 1 K" data_in $end
+$var wire 1 . enable $end
+$var wire 22 L" phi_veer_in [21:0] $end
+$var wire 2 M" quarter_in [1:0] $end
+$var wire 2 N" quarter_out [1:0] $end
+$var wire 22 O" result_grad [21:0] $end
+$var wire 1 2 rst $end
+$var wire 1 3 rst_step $end
+$var reg 20 P" X_out [19:0] $end
+$var reg 20 Q" Xd [19:0] $end
+$var reg 20 R" Y_out [19:0] $end
+$var reg 20 S" Yd [19:0] $end
+$var reg 1 T" done $end
+$var reg 4 U" iter_grad [3:0] $end
+$var reg 22 V" phi_veer_out [21:0] $end
+$scope function SHIFT_RIGHT $end
+$upscope $end
+$scope module grd $end
+$var wire 4 W" value [3:0] $end
+$var reg 22 X" result [21:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk0000001 $end
+$scope module Out $end
+$var wire 20 Y" X_in [19:0] $end
+$var wire 20 Z" Y_in [19:0] $end
+$var wire 1 - clk $end
+$var wire 1 [" data_in $end
+$var wire 1 . enable $end
+$var wire 22 \" phi_veer_in [21:0] $end
+$var wire 2 ]" quarter_in [1:0] $end
+$var wire 2 ^" quarter_out [1:0] $end
+$var wire 22 _" result_grad [21:0] $end
+$var wire 1 2 rst $end
+$var wire 1 3 rst_step $end
+$var reg 20 `" X_out [19:0] $end
+$var reg 20 a" Xd [19:0] $end
+$var reg 20 b" Y_out [19:0] $end
+$var reg 20 c" Yd [19:0] $end
+$var reg 1 d" done $end
+$var reg 4 e" iter_grad [3:0] $end
+$var reg 22 f" phi_veer_out [21:0] $end
+$scope function SHIFT_RIGHT $end
+$upscope $end
+$scope module grd $end
+$var wire 4 g" value [3:0] $end
+$var reg 22 h" result [21:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk00000001 $end
+$scope module Out $end
+$var wire 20 i" X_in [19:0] $end
+$var wire 20 j" Y_in [19:0] $end
+$var wire 1 - clk $end
+$var wire 1 k" data_in $end
+$var wire 1 . enable $end
+$var wire 22 l" phi_veer_in [21:0] $end
+$var wire 2 m" quarter_in [1:0] $end
+$var wire 2 n" quarter_out [1:0] $end
+$var wire 22 o" result_grad [21:0] $end
+$var wire 1 2 rst $end
+$var wire 1 3 rst_step $end
+$var reg 20 p" X_out [19:0] $end
+$var reg 20 q" Xd [19:0] $end
+$var reg 20 r" Y_out [19:0] $end
+$var reg 20 s" Yd [19:0] $end
+$var reg 1 t" done $end
+$var reg 4 u" iter_grad [3:0] $end
+$var reg 22 v" phi_veer_out [21:0] $end
+$scope function SHIFT_RIGHT $end
+$upscope $end
+$scope module grd $end
+$var wire 4 w" value [3:0] $end
+$var reg 22 x" result [21:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk000000001 $end
+$scope module Out $end
+$var wire 20 y" X_in [19:0] $end
+$var wire 20 z" Y_in [19:0] $end
+$var wire 1 - clk $end
+$var wire 1 {" data_in $end
+$var wire 1 . enable $end
+$var wire 22 |" phi_veer_in [21:0] $end
+$var wire 2 }" quarter_in [1:0] $end
+$var wire 2 ~" quarter_out [1:0] $end
+$var wire 22 !# result_grad [21:0] $end
+$var wire 1 2 rst $end
+$var wire 1 3 rst_step $end
+$var reg 20 "# X_out [19:0] $end
+$var reg 20 ## Xd [19:0] $end
+$var reg 20 $# Y_out [19:0] $end
+$var reg 20 %# Yd [19:0] $end
+$var reg 1 &# done $end
+$var reg 4 '# iter_grad [3:0] $end
+$var reg 22 (# phi_veer_out [21:0] $end
+$scope function SHIFT_RIGHT $end
+$upscope $end
+$scope module grd $end
+$var wire 4 )# value [3:0] $end
+$var reg 22 *# result [21:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk0000000001 $end
+$scope module Out $end
+$var wire 20 +# X_in [19:0] $end
+$var wire 20 ,# Y_in [19:0] $end
+$var wire 1 - clk $end
+$var wire 1 -# data_in $end
+$var wire 1 . enable $end
+$var wire 22 .# phi_veer_in [21:0] $end
+$var wire 2 /# quarter_in [1:0] $end
+$var wire 2 0# quarter_out [1:0] $end
+$var wire 22 1# result_grad [21:0] $end
+$var wire 1 2 rst $end
+$var wire 1 3 rst_step $end
+$var reg 20 2# X_out [19:0] $end
+$var reg 20 3# Xd [19:0] $end
+$var reg 20 4# Y_out [19:0] $end
+$var reg 20 5# Yd [19:0] $end
+$var reg 1 6# done $end
+$var reg 4 7# iter_grad [3:0] $end
+$var reg 22 8# phi_veer_out [21:0] $end
+$scope function SHIFT_RIGHT $end
+$upscope $end
+$scope module grd $end
+$var wire 4 9# value [3:0] $end
+$var reg 22 :# result [21:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk00000000001 $end
+$scope module Out $end
+$var wire 20 ;# X_in [19:0] $end
+$var wire 20 <# Y_in [19:0] $end
+$var wire 1 - clk $end
+$var wire 1 =# data_in $end
+$var wire 1 . enable $end
+$var wire 22 ># phi_veer_in [21:0] $end
+$var wire 2 ?# quarter_in [1:0] $end
+$var wire 2 @# quarter_out [1:0] $end
+$var wire 22 A# result_grad [21:0] $end
+$var wire 1 2 rst $end
+$var wire 1 3 rst_step $end
+$var reg 20 B# X_out [19:0] $end
+$var reg 20 C# Xd [19:0] $end
+$var reg 20 D# Y_out [19:0] $end
+$var reg 20 E# Yd [19:0] $end
+$var reg 1 F# done $end
+$var reg 4 G# iter_grad [3:0] $end
+$var reg 22 H# phi_veer_out [21:0] $end
+$scope function SHIFT_RIGHT $end
+$upscope $end
+$scope module grd $end
+$var wire 4 I# value [3:0] $end
+$var reg 22 J# result [21:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk000000000001 $end
+$scope module Out $end
+$var wire 20 K# X_in [19:0] $end
+$var wire 20 L# Y_in [19:0] $end
+$var wire 1 - clk $end
+$var wire 1 M# data_in $end
+$var wire 1 . enable $end
+$var wire 22 N# phi_veer_in [21:0] $end
+$var wire 2 O# quarter_in [1:0] $end
+$var wire 2 P# quarter_out [1:0] $end
+$var wire 22 Q# result_grad [21:0] $end
+$var wire 1 2 rst $end
+$var wire 1 3 rst_step $end
+$var reg 20 R# X_out [19:0] $end
+$var reg 20 S# Xd [19:0] $end
+$var reg 20 T# Y_out [19:0] $end
+$var reg 20 U# Yd [19:0] $end
+$var reg 1 V# done $end
+$var reg 4 W# iter_grad [3:0] $end
+$var reg 22 X# phi_veer_out [21:0] $end
+$scope function SHIFT_RIGHT $end
+$upscope $end
+$scope module grd $end
+$var wire 4 Y# value [3:0] $end
+$var reg 22 Z# result [21:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk0000000000001 $end
+$scope module Out $end
+$var wire 20 [# X_in [19:0] $end
+$var wire 20 \# Y_in [19:0] $end
+$var wire 1 - clk $end
+$var wire 1 ]# data_in $end
+$var wire 1 . enable $end
+$var wire 22 ^# phi_veer_in [21:0] $end
+$var wire 2 _# quarter_in [1:0] $end
+$var wire 2 `# quarter_out [1:0] $end
+$var wire 22 a# result_grad [21:0] $end
+$var wire 1 2 rst $end
+$var wire 1 3 rst_step $end
+$var reg 20 b# X_out [19:0] $end
+$var reg 20 c# Xd [19:0] $end
+$var reg 20 d# Y_out [19:0] $end
+$var reg 20 e# Yd [19:0] $end
+$var reg 1 f# done $end
+$var reg 4 g# iter_grad [3:0] $end
+$var reg 22 h# phi_veer_out [21:0] $end
+$scope function SHIFT_RIGHT $end
+$upscope $end
+$scope module grd $end
+$var wire 4 i# value [3:0] $end
+$var reg 22 j# result [21:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk00000000000001 $end
+$scope module Out $end
+$var wire 20 k# X_in [19:0] $end
+$var wire 20 l# Y_in [19:0] $end
+$var wire 1 - clk $end
+$var wire 1 m# data_in $end
+$var wire 1 . enable $end
+$var wire 22 n# phi_veer_in [21:0] $end
+$var wire 2 o# quarter_in [1:0] $end
+$var wire 2 p# quarter_out [1:0] $end
+$var wire 22 q# result_grad [21:0] $end
+$var wire 1 2 rst $end
+$var wire 1 3 rst_step $end
+$var reg 20 r# X_out [19:0] $end
+$var reg 20 s# Xd [19:0] $end
+$var reg 20 t# Y_out [19:0] $end
+$var reg 20 u# Yd [19:0] $end
+$var reg 1 v# done $end
+$var reg 4 w# iter_grad [3:0] $end
+$var reg 22 x# phi_veer_out [21:0] $end
+$scope function SHIFT_RIGHT $end
+$upscope $end
+$scope module grd $end
+$var wire 4 y# value [3:0] $end
+$var reg 22 z# result [21:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk000000000000001 $end
+$scope module Out $end
+$var wire 20 {# X_in [19:0] $end
+$var wire 20 |# Y_in [19:0] $end
+$var wire 1 - clk $end
+$var wire 1 }# data_in $end
+$var wire 1 . enable $end
+$var wire 22 ~# phi_veer_in [21:0] $end
+$var wire 2 !$ quarter_in [1:0] $end
+$var wire 2 "$ quarter_out [1:0] $end
+$var wire 22 #$ result_grad [21:0] $end
+$var wire 1 2 rst $end
+$var wire 1 3 rst_step $end
+$var reg 20 $$ X_out [19:0] $end
+$var reg 20 %$ Xd [19:0] $end
+$var reg 20 &$ Y_out [19:0] $end
+$var reg 20 '$ Yd [19:0] $end
+$var reg 1 ($ done $end
+$var reg 4 )$ iter_grad [3:0] $end
+$var reg 22 *$ phi_veer_out [21:0] $end
+$scope function SHIFT_RIGHT $end
+$upscope $end
+$scope module grd $end
+$var wire 4 +$ value [3:0] $end
+$var reg 22 ,$ result [21:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin genblk0000000000000001 $end
+$scope module Out $end
+$var wire 20 -$ X_in [19:0] $end
+$var wire 20 .$ Y_in [19:0] $end
+$var wire 1 - clk $end
+$var wire 1 /$ data_in $end
+$var wire 1 . enable $end
+$var wire 22 0$ phi_veer_in [21:0] $end
+$var wire 2 1$ quarter_in [1:0] $end
+$var wire 2 2$ quarter_out [1:0] $end
+$var wire 22 3$ result_grad [21:0] $end
+$var wire 1 2 rst $end
+$var wire 1 3 rst_step $end
+$var reg 20 4$ X_out [19:0] $end
+$var reg 20 5$ Xd [19:0] $end
+$var reg 20 6$ Y_out [19:0] $end
+$var reg 20 7$ Yd [19:0] $end
+$var reg 1 8$ done $end
+$var reg 4 9$ iter_grad [3:0] $end
+$var reg 22 :$ phi_veer_out [21:0] $end
+$scope function SHIFT_RIGHT $end
+$upscope $end
+$scope module grd $end
+$var wire 4 ;$ value [3:0] $end
+$var reg 22 <$ result [21:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b100 <$
+b1111 ;$
+bx :$
+b1111 9$
+x8$
+bx 7$
+bx 6$
+bx 5$
+bx 4$
+b100 3$
+bx 2$
+bx 1$
+bx 0$
+x/$
+bx .$
+bx -$
+b1100 ,$
+b1110 +$
+bx *$
+b1110 )$
+x($
+bx '$
+bx &$
+bx %$
+bx $$
+b1100 #$
+bx "$
+bx !$
+bx ~#
+x}#
+bx |#
+bx {#
+b11100 z#
+b1101 y#
+bx x#
+b1101 w#
+xv#
+bx u#
+bx t#
+bx s#
+bx r#
+b11100 q#
+bx p#
+bx o#
+bx n#
+xm#
+bx l#
+bx k#
+b110101 j#
+b1100 i#
+bx h#
+b1100 g#
+xf#
+bx e#
+bx d#
+bx c#
+bx b#
+b110101 a#
+bx `#
+bx _#
+bx ^#
+x]#
+bx \#
+bx [#
+b1111010 Z#
+b1011 Y#
+bx X#
+b1011 W#
+xV#
+bx U#
+bx T#
+bx S#
+bx R#
+b1111010 Q#
+bx P#
+bx O#
+bx N#
+xM#
+bx L#
+bx K#
+b11110101 J#
+b1010 I#
+bx H#
+b1010 G#
+xF#
+bx E#
+bx D#
+bx C#
+bx B#
+b11110101 A#
+bx @#
+bx ?#
+bx >#
+x=#
+bx <#
+bx ;#
+b111000010 :#
+b1001 9#
+bx 8#
+b1001 7#
+x6#
+bx 5#
+bx 4#
+bx 3#
+bx 2#
+b111000010 1#
+bx 0#
+bx /#
+bx .#
+x-#
+bx ,#
+bx +#
+b1110000101 *#
+b1000 )#
+bx (#
+b1000 '#
+x&#
+bx %#
+bx $#
+bx ##
+bx "#
+b1110000101 !#
+bx ~"
+bx }"
+bx |"
+x{"
+bx z"
+bx y"
+b11111010111 x"
+b111 w"
+bx v"
+b111 u"
+xt"
+bx s"
+bx r"
+bx q"
+bx p"
+b11111010111 o"
+bx n"
+bx m"
+bx l"
+xk"
+bx j"
+bx i"
+b111111010111 h"
+b110 g"
+bx f"
+b110 e"
+xd"
+bx c"
+bx b"
+bx a"
+bx `"
+b111111010111 _"
+bx ^"
+bx ]"
+bx \"
+x["
+bx Z"
+bx Y"
+b1111111010111 X"
+b101 W"
+bx V"
+b101 U"
+xT"
+bx S"
+bx R"
+bx Q"
+bx P"
+b1111111010111 O"
+bx N"
+bx M"
+bx L"
+xK"
+bx J"
+bx I"
+b11111110000101 H"
+b100 G"
+bx F"
+b100 E"
+xD"
+bx C"
+bx B"
+bx A"
+bx @"
+b11111110000101 ?"
+bx >"
+bx ="
+bx <"
+x;"
+bx :"
+bx 9"
+b111111010111000 8"
+b11 7"
+bx 6"
+b11 5"
+x4"
+bx 3"
+bx 2"
+bx 1"
+bx 0"
+b111111010111000 /"
+bx ."
+bx -"
+bx ,"
+x+"
+bx *"
+bx )"
+b1110000010100011 ("
+b10 '"
+bx &"
+b10 %"
+x$"
+bx #"
+bx ""
+bx !"
+bx ~
+b1110000010100011 }
+bx |
+bx {
+bx z
+xy
+bx x
+bx w
+b11010100110011001 v
+b1 u
+bx t
+b1 s
+xr
+bx q
+bx p
+bx o
+bx n
+b11010100110011001 m
+bx l
+bx k
+bx j
+xi
+bx h
+bx g
+b101101000000000000 f
+b0 e
+bx d
+b0 c
+xb
+bx a
+bx `
+bx _
+bx ^
+b101101000000000000 ]
+bx \
+bx [
+bx Z
+xY
+bx X
+bx W
+xV
+bx U
+bx T
+bx S
+bx R
+xQ
+xP
+bx O
+xN
+bx M
+bx L
+bx K
+bx J
+bx I
+xH
+xG
+bx F
+bx E
+bx D
+bx C
+xB
+bx A
+bx @
+bx ?
+bx >
+bx =
+x<
+bx ;
+x:
+x9
+bx 8
+bx 7
+bx 6
+bx 5
+bx 4
+x3
+x2
+bx 1
+bx 0
+bx /
+x.
+x-
+bx ,
+bx +
+x*
+bx )
+bx (
+x'
+x&
+bx %
+bx $
+bx #
+bx "
+x!
+$end
+#10
+0b
+0i
+b0 d
+b0 j
+b0 a
+b0 _
+0r
+0y
+b0 t
+b0 z
+b0 q
+b0 o
+0$"
+0+"
+b0 &"
+b0 ,"
+b0 #"
+b0 !"
+04"
+0;"
+b0 6"
+b0 <"
+b0 3"
+b0 1"
+0D"
+0K"
+b0 F"
+b0 L"
+b0 C"
+b0 A"
+0T"
+0["
+b0 V"
+b0 \"
+b0 S"
+b0 Q"
+0d"
+0k"
+b0 f"
+b0 l"
+b0 c"
+b0 a"
+0t"
+0{"
+b0 v"
+b0 |"
+b0 s"
+b0 q"
+0&#
+0-#
+b0 (#
+b0 .#
+b0 %#
+b0 ##
+06#
+0=#
+b0 8#
+b0 >#
+b0 5#
+b0 3#
+0F#
+0M#
+b0 H#
+b0 N#
+b0 E#
+b0 C#
+0V#
+0]#
+b0 X#
+b0 ^#
+b0 U#
+b0 S#
+0f#
+0m#
+b0 h#
+b0 n#
+b0 e#
+b0 c#
+0v#
+0}#
+b0 x#
+b0 ~#
+b0 u#
+b0 s#
+0($
+0/$
+b0 *$
+b0 0$
+b0 '$
+b0 %$
+08$
+0B
+b0 :$
+b0 "
+b0 0
+b0 7$
+b0 5$
+1:
+0<
+09
+0Y
+b0xxxxxxxxx ?
+b0xxxxxxxxx Z
+b0 A
+0H
+0G
+0N
+0Q
+0P
+0!
+0V
+03
+b0 U
+1'
+1.
+1*
+12
+0&
+0-
+#20
+b0 (
+b1011111000000000000 )
+b1011111000000000000 /
+b1011111000000000000 8
+b0 ,
+b0 X
+b0 6
+b11000000000000 +
+b11000000000000 W
+b11000000000000 4
+0*
+02
+#30
+1<
+b1 U
+b0 ;
+b1011111 =
+bx A
+b1 (
+1&
+1-
+#40
+b10 (
+0&
+0-
+#50
+b10 U
+b1 ;
+b101 =
+b0 A
+b11 (
+1&
+1-
+#60
+b100 (
+0&
+0-
+#70
+19
+1Y
+b101000000000000 ?
+b101000000000000 Z
+b1 @
+b1 C
+b1 2$
+b1 #
+b1 1
+b1 "$
+b1 1$
+b1 p#
+b1 !$
+b1 `#
+b1 o#
+b1 P#
+b1 _#
+b1 @#
+b1 O#
+b1 0#
+b1 ?#
+b1 ~"
+b1 /#
+b1 n"
+b1 }"
+b1 ^"
+b1 m"
+b1 N"
+b1 ]"
+b1 >"
+b1 M"
+b1 ."
+b1 ="
+b1 |
+b1 -"
+b1 l
+b1 {
+b1 \
+b1 k
+b1 [
+b11 U
+b1 A
+b101 (
+1&
+1-
+#80
+b110 (
+0&
+0-
+#90
+1b
+1i
+b11000000000000 `
+b11000000000000 h
+b11000000000000 ^
+b11000000000000 g
+b100 U
+b1000101000000000000000 d
+b1000101000000000000000 j
+b11000000000000 _
+b111 (
+1&
+1-
+#100
+b1000 (
+0&
+0-
+#110
+1r
+1y
+b1000001101011001100111 t
+b1000001101011001100111 z
+b1100000000000 p
+b1100000000000 x
+b100100000000000 n
+b100100000000000 w
+b101 U
+b1100000000000 q
+b1100000000000 o
+b1001 (
+1&
+1-
+#120
+b1010 (
+0&
+0-
+#130
+1$"
+1+"
+b11000000000 ""
+b11000000000 *"
+b100111000000000 ~
+b100111000000000 )"
+b110 U
+b101000111100 &"
+b101000111100 ,"
+b11000000000 #"
+b1001000000000 !"
+b1011 (
+1&
+1-
+#140
+b1100 (
+0&
+0-
+#150
+14"
+1;"
+b111111000000 2"
+b111111000000 :"
+b100110101000000 0"
+b100110101000000 9"
+b111 U
+b1000000111010001111100 6"
+b1000000111010001111100 <"
+b11000000 3"
+b100111000000 1"
+b1101 (
+1&
+1-
+#160
+b1110 (
+0&
+0-
+#170
+1D"
+1K"
+b1000000011010011110111 F"
+b1000000011010011110111 L"
+b101011101100 B"
+b101011101100 J"
+b100111000111100 @"
+b100111000111100 I"
+b1000 U
+b11111100 C"
+b10011010100 A"
+b1111 (
+1&
+1-
+#180
+b10000 (
+0&
+0-
+#190
+1T"
+1["
+b1000000001010100100000 V"
+b1000000001010100100000 \"
+b100001111011 R"
+b100001111011 Z"
+b100111010010011 P"
+b100111010010011 Y"
+b1001 U
+b1010111 S"
+b1001110001 Q"
+b10001 (
+1&
+1-
+#200
+b10010 (
+0&
+0-
+#210
+1d"
+1k"
+b1000000000010101001001 f"
+b1000000000010101001001 l"
+b11101000001 b"
+b11101000001 j"
+b100111010110100 `"
+b100111010110100 i"
+b1010 U
+b100001 c"
+b100111010 a"
+b10011 (
+1&
+1-
+#220
+b10100 (
+0&
+0-
+#230
+1t"
+1{"
+b11010100100 r"
+b11010100100 z"
+b100111011000010 p"
+b100111011000010 y"
+b1011 U
+b1010001110 v"
+b1010001110 |"
+b1110 s"
+b10011101 q"
+b10101 (
+1&
+1-
+#240
+b10110 (
+0&
+0-
+#250
+1&#
+1-#
+b11011110010 $#
+b11011110010 ,#
+b100111010111100 "#
+b100111010111100 +#
+b1100 U
+b1000000000000011110111 (#
+b1000000000000011110111 .#
+b110 %#
+b1001110 ##
+b10111 (
+1&
+1-
+#260
+b11000 (
+0&
+0-
+#270
+16#
+1=#
+b11011001011 4#
+b11011001011 <#
+b100111010111111 2#
+b100111010111111 ;#
+b1101 U
+b11001011 8#
+b11001011 >#
+b11 5#
+b100111 3#
+b11001 (
+1&
+1-
+#280
+b11010 (
+0&
+0-
+#290
+1F#
+1M#
+b11011011110 D#
+b11011011110 L#
+b100111010111110 B#
+b100111010111110 K#
+b1110 U
+b1000000000000000101010 H#
+b1000000000000000101010 N#
+b1 E#
+b10011 C#
+b11011 (
+1&
+1-
+#300
+b11100 (
+0&
+0-
+#310
+1V#
+1]#
+b11011010101 T#
+b11011010101 \#
+b100111010111110 R#
+b100111010111110 [#
+b1111 U
+b1010000 X#
+b1010000 ^#
+b1001 S#
+b11101 (
+1&
+1-
+#320
+b11110 (
+0&
+0-
+#330
+1f#
+1m#
+b11011 h#
+b11011 n#
+b11011011001 d#
+b11011011001 l#
+b100111010111110 b#
+b100111010111110 k#
+b10000 U
+b100 c#
+b11111 (
+1&
+1-
+#340
+b100000 (
+0&
+0-
+#350
+1v#
+1}#
+b11011011011 t#
+b11011011011 |#
+b100111010111110 r#
+b100111010111110 {#
+b10001 U
+b1000000000000000000001 x#
+b1000000000000000000001 ~#
+b10 s#
+b100001 (
+1&
+1-
+#360
+b100010 (
+0&
+0-
+#370
+1($
+1/$
+b11011011010 &$
+b11011011010 .$
+b100111010111110 $$
+b100111010111110 -$
+b10010 U
+b1011 *$
+b1011 0$
+b1 %$
+b100011 (
+1&
+1-
+#380
+b100100 (
+0&
+0-
+#390
+b100111010111110 K
+b10000000011011011010 J
+18$
+1B
+b111 :$
+b111 "
+b111 0
+b11011011010 6$
+b11011011010 E
+b100111010111110 4$
+b100111010111110 D
+b10011 U
+b100101 (
+1&
+1-
+#400
+b100110 (
+0&
+0-
+#410
+1H
+b10100 U
+b100111 (
+1&
+1-
+#420
+b101000 (
+0&
+0-
+#430
+0H
+1G
+1N
+b100111010111110 I
+b100111010111110 M
+b10000000011011011010 F
+b10000000011011011010 L
+b10101 U
+b101001 (
+1&
+1-
+#440
+b101010 (
+0&
+0-
+#450
+0G
+0N
+1H
+1Q
+b10111111010001 T
+b10000100110 S
+b10110 U
+b101011 (
+1&
+1-
+#460
+b101100 (
+0&
+0-
+#470
+0Q
+1P
+1!
+b10111111010001 R
+b10111111010001 %
+b10111111010001 7
+b10000000010000100110 O
+b10000000010000100110 $
+b10000000010000100110 5
+0H
+1G
+1N
+b10111 U
+b101101 (
+1&
+1-
+#480
+b101110 (
+0&
+0-
+#490
+0G
+0N
+1H
+0P
+0!
+1Q
+b11000 U
+b101111 (
+1&
+1-
+#500
+b110000 (
+0&
+0-
+#510
+bx K
+bx J
+0b
+0i
+b0 d
+b0 j
+bx `
+bx h
+bx ^
+bx g
+b0 _
+0r
+0y
+b0 t
+b0 z
+bx p
+bx x
+bx n
+bx w
+b0 q
+b0 o
+0$"
+0+"
+b0 &"
+b0 ,"
+bx ""
+bx *"
+bx ~
+bx )"
+b0 #"
+b0 !"
+04"
+0;"
+b0 6"
+b0 <"
+bx 2"
+bx :"
+bx 0"
+bx 9"
+b0 3"
+b0 1"
+0D"
+0K"
+b0 F"
+b0 L"
+bx B"
+bx J"
+bx @"
+bx I"
+b0 C"
+b0 A"
+0T"
+0["
+b0 V"
+b0 \"
+bx R"
+bx Z"
+bx P"
+bx Y"
+b0 S"
+b0 Q"
+0d"
+0k"
+b0 f"
+b0 l"
+bx b"
+bx j"
+bx `"
+bx i"
+b0 c"
+b0 a"
+0t"
+0{"
+b0 v"
+b0 |"
+bx r"
+bx z"
+bx p"
+bx y"
+b0 s"
+b0 q"
+0&#
+0-#
+b0 (#
+b0 .#
+bx $#
+bx ,#
+bx "#
+bx +#
+b0 %#
+b0 ##
+06#
+0=#
+b0 8#
+b0 >#
+bx 4#
+bx <#
+bx 2#
+bx ;#
+b0 5#
+b0 3#
+0F#
+0M#
+b0 H#
+b0 N#
+bx D#
+bx L#
+bx B#
+bx K#
+b0 E#
+b0 C#
+0V#
+0]#
+b0 X#
+b0 ^#
+bx T#
+bx \#
+bx R#
+bx [#
+b0 S#
+0f#
+0m#
+b0 h#
+b0 n#
+bx d#
+bx l#
+bx b#
+bx k#
+b0 c#
+0v#
+0}#
+b0 x#
+b0 ~#
+bx t#
+bx |#
+bx r#
+bx {#
+b0 s#
+0($
+0/$
+b0 *$
+b0 0$
+bx &$
+bx .$
+bx $$
+bx -$
+b0 %$
+08$
+0B
+b0 :$
+b0 "
+b0 0
+bx 6$
+bx E
+bx 4$
+bx D
+1:
+0<
+bx =
+09
+0Y
+bx @
+bx C
+bx 2$
+bx #
+bx 1
+bx "$
+bx 1$
+bx p#
+bx !$
+bx `#
+bx o#
+bx P#
+bx _#
+bx @#
+bx O#
+bx 0#
+bx ?#
+bx ~"
+bx /#
+bx n"
+bx }"
+bx ^"
+bx m"
+bx N"
+bx ]"
+bx >"
+bx M"
+bx ."
+bx ="
+bx |
+bx -"
+bx l
+bx {
+bx \
+bx k
+bx [
+b0xxxxxxxxx ?
+b0xxxxxxxxx Z
+bx ;
+b0 A
+bx I
+bx M
+bx F
+bx L
+bx T
+bx S
+bx R
+bx %
+bx 7
+bx O
+bx $
+bx 5
+0Q
+0P
+0!
+0H
+0G
+0N
+1V
+13
+b0 U
+b110001 (
+1&
+1-
+#520
+b110010 (
+0&
+0-
+#530
+0:
+0V
+03
+b1 U
+b110011 (
+1&
+1-
+#540
+b110100 (
+0&
+0-
+#550
+1<
+b10 U
+b0 ;
+b1011111 =
+bx A
+b110101 (
+1&
+1-
+#560
+b110110 (
+0&
+0-
+#570
+b11 U
+b1 ;
+b101 =
+1:
+b0 A
+b110111 (
+1&
+1-
+#580
+b111000 (
+0&
+0-
+#590
+19
+1Y
+b101000000000000 ?
+b101000000000000 Z
+b1 @
+b1 C
+b1 2$
+b1 #
+b1 1
+b1 "$
+b1 1$
+b1 p#
+b1 !$
+b1 `#
+b1 o#
+b1 P#
+b1 _#
+b1 @#
+b1 O#
+b1 0#
+b1 ?#
+b1 ~"
+b1 /#
+b1 n"
+b1 }"
+b1 ^"
+b1 m"
+b1 N"
+b1 ]"
+b1 >"
+b1 M"
+b1 ."
+b1 ="
+b1 |
+b1 -"
+b1 l
+b1 {
+b1 \
+b1 k
+b1 [
+b100 U
+b1 A
+b111001 (
+1&
+1-
+#600
+b111010 (
+0&
+0-
+#610
+1b
+1i
+b11000000000000 `
+b11000000000000 h
+b11000000000000 ^
+b11000000000000 g
+b101 U
+b1000101000000000000000 d
+b1000101000000000000000 j
+b11000000000000 _
+b111011 (
+1&
+1-
+#620
+b111100 (
+0&
+0-
+#630
+1r
+1y
+b1000001101011001100111 t
+b1000001101011001100111 z
+b1100000000000 p
+b1100000000000 x
+b100100000000000 n
+b100100000000000 w
+b110 U
+b1100000000000 q
+b1100000000000 o
+b111101 (
+1&
+1-
+#640
+b111110 (
+0&
+0-
+#650
+1$"
+1+"
+b11000000000 ""
+b11000000000 *"
+b100111000000000 ~
+b100111000000000 )"
+b111 U
+b101000111100 &"
+b101000111100 ,"
+b11000000000 #"
+b1001000000000 !"
+b111111 (
+1&
+1-
+#660
+b1000000 (
+0&
+0-
+#670
+14"
+1;"
+b111111000000 2"
+b111111000000 :"
+b100110101000000 0"
+b100110101000000 9"
+b1000 U
+b1000000111010001111100 6"
+b1000000111010001111100 <"
+b11000000 3"
+b100111000000 1"
+b1000001 (
+1&
+1-
+#680
+b1000010 (
+0&
+0-
+#690
+1D"
+1K"
+b1000000011010011110111 F"
+b1000000011010011110111 L"
+b101011101100 B"
+b101011101100 J"
+b100111000111100 @"
+b100111000111100 I"
+b1001 U
+b11111100 C"
+b10011010100 A"
+b1000011 (
+1&
+1-
+#700
+b1000100 (
+0&
+0-
+#710
+1T"
+1["
+b1000000001010100100000 V"
+b1000000001010100100000 \"
+b100001111011 R"
+b100001111011 Z"
+b100111010010011 P"
+b100111010010011 Y"
+b1010 U
+b1010111 S"
+b1001110001 Q"
+b1000101 (
+1&
+1-
+#720
+b1000110 (
+0&
+0-
+#730
+1d"
+1k"
+b1000000000010101001001 f"
+b1000000000010101001001 l"
+b11101000001 b"
+b11101000001 j"
+b100111010110100 `"
+b100111010110100 i"
+b1011 U
+b100001 c"
+b100111010 a"
+b1000111 (
+1&
+1-
+#740
+b1001000 (
+0&
+0-
+#750
+1t"
+1{"
+b11010100100 r"
+b11010100100 z"
+b100111011000010 p"
+b100111011000010 y"
+b1100 U
+b1010001110 v"
+b1010001110 |"
+b1110 s"
+b10011101 q"
+b1001001 (
+1&
+1-
+#760
+b1001010 (
+0&
+0-
+#770
+1&#
+1-#
+b11011110010 $#
+b11011110010 ,#
+b100111010111100 "#
+b100111010111100 +#
+b1101 U
+b1000000000000011110111 (#
+b1000000000000011110111 .#
+b110 %#
+b1001110 ##
+b1001011 (
+1&
+1-
+#780
+b1001100 (
+0&
+0-
+#790
+16#
+1=#
+b11011001011 4#
+b11011001011 <#
+b100111010111111 2#
+b100111010111111 ;#
+b1110 U
+b11001011 8#
+b11001011 >#
+b11 5#
+b100111 3#
+b1001101 (
+1&
+1-
+#800
+b1001110 (
+0&
+0-
+#810
+1F#
+1M#
+b11011011110 D#
+b11011011110 L#
+b100111010111110 B#
+b100111010111110 K#
+b1111 U
+b1000000000000000101010 H#
+b1000000000000000101010 N#
+b1 E#
+b10011 C#
+b1001111 (
+1&
+1-
+#820
+b1010000 (
+0&
+0-
